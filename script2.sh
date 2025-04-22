@@ -117,8 +117,8 @@ utilities() {
         echo "====== Utilities ======"
         select option in "Date/Time" "Calendar" "View Manual Pages" "Determine File Type" "Determine Command Type" "Sort File" "Search File" "Return to Main Menu"; do
             case $REPLY in
-                1) date ;;
-                2) cal ;;
+                1) date ; utilities;;;;
+                2) cal ; utilities;;;;
                 3) read -p "Enter command to view man page: " cmd; man "$cmd" ; utilities;;
                 4) read -p "Enter filename to determine type: " filename; file "$filename" ; utilities;;
                 5) read -p "Enter command to determine type: " cmd; type "$cmd" ; utilities;;
